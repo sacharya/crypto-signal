@@ -45,4 +45,4 @@ class TelegramNotifier(NotifierUtils):
         #print(message_chunks)
         #exit()
         for message_chunk in message_chunks:
-            self.bot.send_message(chat_id=self.chat_id, text=message_chunk, parse_mode=self.parse_mode)
+            self.bot.send_message(chat_id=self.chat_id, text=message_chunk, parse_mode=self.parse_mode, disable_web_page_preview=True)
